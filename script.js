@@ -1,5 +1,7 @@
 const body = document.querySelector("body");
 const main = document.querySelector(".main");
+const picture = document.querySelector("#picture");
+const pictureSrc = document.querySelector("#pic-source");
 const revealBtn = document.querySelector(".reveal-btn");
 const mainBanner = document.querySelector("#main-banner");
 const balloons = ["./img/1.png", "./img/2.png", "./img/3.png", "./img/4.png"];
@@ -13,11 +15,12 @@ revealBtn.addEventListener("click", () => {
 });
 
 function createRevealImg() {
+  pictureSrc.setAttribute("srcset", "./img/reveal.png");
   const revealImg = document.createElement("img");
-  revealImg.setAttribute("src", "./img/reveal.png");
+  revealImg.setAttribute("src", "./img/reveal_small.png");
   revealImg.classList.add("reveal-img");
   revealImg.classList.add("banner");
-  main.appendChild(revealImg);
+  picture.appendChild(revealImg);
   body.classList.add("active");
   let interval = setInterval(() => {
     let opacity = +revealImg.style.opacity;

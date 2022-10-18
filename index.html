@@ -10,12 +10,19 @@
   </head>
   <body>
     <div class="main">
-      <img
-        id="main-banner"
-        class="banner"
-        src="./img/main.png"
-        alt="Gender Reveal Banner"
-      />
+      <picture id="picture">
+        <source
+          id="pic-source"
+          media="(min-width: 800px)"
+          srcset="./img/main.png"
+        />
+        <img
+          id="main-banner"
+          class="banner"
+          src="./img/main_small.png"
+          alt="Gender Reveal Banner"
+        />
+      </picture>
       <button class="reveal-btn" type="button">Reveal</button>
     </div>
   </body>
