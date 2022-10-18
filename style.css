@@ -78,4 +78,8 @@ body {
   .banner {
     scale: 40%;
   }
+
+  .balloon {
+    scale: 70%;
+  }
 }
