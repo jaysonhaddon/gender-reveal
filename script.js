@@ -35,7 +35,7 @@ function createRevealImg() {
 
 function createBalloons() {
   let max = 15;
-  let width = 750;
+  let width = 300;
   for (let i = 0; i < max; i++) {
     const newBalloon = document.createElement("img");
     let randomImg = Math.floor(Math.random() * balloons.length);
